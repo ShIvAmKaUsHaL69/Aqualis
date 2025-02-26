@@ -9,7 +9,6 @@ export default function Entry() {
         <p className='px-3 py-2 bg-[#00000066] text-3xl text-white rounded-md'>Offering Efficient and Reliable Fueling Services</p>
         <Link href='#' className='bg-[#05363B] text-white text-xl px-10 py-3 rounded-md'>Learn More</Link>
       </div>
-      
     </div>
   )
 }

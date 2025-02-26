@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Hamburger from "./Hamburger";
 
 export default function Header() {
   return (
@@ -13,6 +14,7 @@ export default function Header() {
         <Link href='#'>Blogs</Link>
         <Link href='#'>Contact Us</Link>
       </div>
+      <div className="lg:hidden"><Hamburger /></div>
     </div>
   </div>
   )
