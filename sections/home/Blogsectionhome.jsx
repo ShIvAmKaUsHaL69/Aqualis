@@ -4,7 +4,7 @@ import Homeblogcard from '../../components/Homeblogcard'
 
 export default function Blogsectionhome() {
   return (
-    <div className='py-20'>
+    <div className='py-20' id='blog'>
     <div className='max-w-[1280px] mx-auto w-full px-3'>
       <p className='text-4xl font-bold text-[#05363B]'>Blogs</p>
       <div className='flex mt-10 flex-col lg:flex-row gap-10'>

@@ -16,7 +16,7 @@ export default function Bunkerpoints() {
                     <Bulletpoints title='Bunkers Claims Handling' description=' We provide expertise and advice on operational and technical issues, specializing in document analysis and efficient claim resolution for fair commercial settlements.' />
                     <Bulletpoints title='Bunkers Surveying & Agency' description=' We offer reliable, vetted surveyors and agents for direct appointment by owners or manage the process on their behalf for seamless operations.' />
                     <Bulletpoints title='Bunker Fuel Procurement Solutions' description=' A dedicated fuel procurement solutions tailored exclusively to our clients’ requirements. Acting as a trusted partner, we take on the responsibility of managing the fuel procurement process end-to-end, ensuring access to reliable, compliant, and cost-effective bunkers.' />
-                    <Link href='#' className='bg-[#05363B] text-white text-xl px-10 py-3 rounded-md'>Learn More</Link>
+                    <Link href='/#contact' className='bg-[#05363B] text-white text-xl px-10 py-3 rounded-md'>Learn More</Link>
                 </div>
             </div>
         </div>

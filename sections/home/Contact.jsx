@@ -1,13 +1,12 @@
 import React from 'react'
 import Inputfield from '../../components/inputfield';
-import Link from 'next/link';
 
 export default function Contact() {
     const handleformsubmit = () => {
         console.log(hi)
     }
   return (
-    <div className='py-20 bg-[#F5F5F5] bg-[url(/contactcircle.png)] bg-no-repeat bg-right-bottom'>
+    <div className='py-20 bg-[#F5F5F5] bg-[url(/contactcircle.png)] bg-no-repeat bg-right-bottom' id='contact'>
         <div className='max-w-[1280px] mx-auto w-full px-3'>
             <p className='text-3xl text-[#05363B]'>Contact Us</p>
             <div className='mt-10 lg:flex-row flex-col flex justify-between'>
@@ -25,7 +24,7 @@ export default function Contact() {
                             <Inputfield field='city' placeholder='City' type='text'/>
                         </div>
                         <textarea name='message' placeholder='Type your Message here!' type='text' className='h-40 border w-full border-black py-4 px-5 rounded-lg bg-transparent text-black placeholder:text-black'/>
-                        <Link href='#' type='submit' className='bg-[#05363B] text-white text-xl px-10 py-3 rounded-md'>Submit Message</Link>
+                        <button href='#' type='submit' className='bg-[#05363B] text-white text-xl px-10 py-3 rounded-md'>Submit Message</button>
                     </form>
                 </div>
             </div>
