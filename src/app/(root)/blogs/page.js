@@ -5,7 +5,6 @@ import Blogsection from '../../../../sections/blogs/Blogsection'
 export default function page() {
   return (
     <div>
-        <Entry />
         <Blogsection />
     </div>
   )

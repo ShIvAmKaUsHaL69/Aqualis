@@ -11,7 +11,6 @@ import Otherservices from "../../../sections/home/Otherservices";
 export default function Home() {
   return (
     <div> 
-      <Entry />
       <About />
       <Bunkering />
       <Bunkerpoints />
