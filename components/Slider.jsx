@@ -10,6 +10,7 @@ const images = [
     '/sats.png',
     '/sats.png',
     '/singlubes.png',
+    '/singlubes.png',
     '/totalenergies.png',
     '/totalenergies.png',
   ];
