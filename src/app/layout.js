@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Acqalis Marine",
+  title: "Home | Acqalis Marine",
   description: "Offering Efficient and Reliable Fueling Services",
 };
 
