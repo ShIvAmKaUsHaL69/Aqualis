@@ -6,7 +6,7 @@ export default function Header() {
     <div className="w-full min-h-20 bg-[#FFFFFF66] absolute z-50 px-3">
     <div className="max-w-[1280px] justify-between items-center flex flex-row mx-auto py-4">
       <img src='/logo.png' className="" alt="logo" />
-      <div className=" hidden lg:flex flex-row gap-12 text-xl color-[#05363B] font-bold">
+      <div className=" hidden lg:flex flex-row gap-12 text-xl text-[#05363B] font-bold">
         <Link href='/'>Home</Link>
         <Link href='/#about'>About Us</Link>
         <Link href='/#bunkering'>Bunkering</Link>

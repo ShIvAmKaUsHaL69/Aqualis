@@ -3,7 +3,7 @@ import Bulletpoints from '../../components/Bulletpoints'
 
 export default function Otherservices() {
   return (
-    <div className='py-28 mt-10 bg-[#1E7179] bg-[url(/otherservicesbg.png)] bg-no-repeat bg-cover ' id='services'>
+    <div className='py-28 mt-10 bg-[#1E7179] bg-[url(/servicesbg.jpeg)] bg-no-repeat bg-cover ' id='services'>
         <div className='max-w-[1280px] mx-auto w-full px-3 '>
             <div className='flex flex-col lg:flex-row gap-10 lg:gap-0'>
                 <div className='w-full lg:w-1/2 text-white flex flex-col gap-8'>

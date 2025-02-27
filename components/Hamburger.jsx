@@ -15,7 +15,7 @@ export default function Hamburger() {
 
       {isOpen && (
         <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg overflow-hidden">
-          <ul className="flex flex-col">
+          <ul className="flex flex-col text-[#05363B]">
           <Link href='/'><li className="p-3 hover:bg-gray-200 cursor-pointer">Home</li></Link>
           <Link href='/#about'><li className="p-3 hover:bg-gray-200 cursor-pointer">About Us</li></Link>
           <Link href='/#bunkering'><li className="p-3 hover:bg-gray-200 cursor-pointer">Bunkering</li></Link>

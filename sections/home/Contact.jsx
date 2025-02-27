@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <div className='py-20 bg-[#F5F5F5] bg-[url(/contactcircle.png)] bg-no-repeat bg-right-bottom' id='contact'>
         <div className='max-w-[1280px] mx-auto w-full px-3'>
-            <p className='text-3xl text-[#05363B]'>Contact Us</p>
+            <p className='text-3xl text-[#05363B] font-semibold'>Contact Us.</p>
             <div className='mt-10 lg:flex-row flex-col flex justify-between'>
                 <div>
                     <img src='/contact.jpg' alt='contact' className='w-full h-full' />

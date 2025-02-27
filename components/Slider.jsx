@@ -4,7 +4,10 @@ import { useState, useEffect } from 'react';
 
 const images = [
     '/airbp.png',
+    '/airbp.png',
     '/chevron.png',
+    '/chevron.png',
+    '/sats.png',
     '/sats.png',
     '/singlubes.png',
     '/totalenergies.png',
