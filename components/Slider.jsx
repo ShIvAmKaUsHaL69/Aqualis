@@ -11,6 +11,7 @@ const images = [
     '/sats.png',
     '/singlubes.png',
     '/totalenergies.png',
+    '/totalenergies.png',
   ];
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
