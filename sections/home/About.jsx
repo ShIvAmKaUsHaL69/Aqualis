@@ -6,9 +6,10 @@ export default function About() {
       <div className='max-w-[1280px] mx-auto w-full flex flex-col lg:pb-48 items-start gap-3 px-3'>
       <div className="block lg:flex flex-row w-full gap-80">
         <div className="relative w-full lg:w-1/2">
-            <img src="/shipsailing.jpg" className="w-full h-auto" />
+            <img src="/shipsailing.jpg" alt='shipsailing' className="w-full h-auto" />
             <img
             src="/shipfromtop.jpg"
+            alt='shipfromtop'
             className="lg:block hidden absolute -bottom-24 -right-64 border-4 border-white shadow-lg"
             />
         </div>
