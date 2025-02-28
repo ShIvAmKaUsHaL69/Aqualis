@@ -54,7 +54,7 @@ export default function Footer() {
       <div className='bg-[#05363B] relative'>
         <div className='max-w-[1280px] mx-auto w-full h-full px-3 py-10 text-xs text-white'>
           <p >CopyRights : Aqualis Marine@2025</p>
-          <Link href='https://api.whatsapp.com/send/?phone=6597399507&text=Hello+%2C+i+am+interested&type=phone_number&app_absent=0' className='absolute top-[20%] right-[5%]'>
+          <Link href='https://api.whatsapp.com/send/?phone=6597399507&text=Hello+%2C+i+am+interested&type=phone_number&app_absent=0' className='fixed bottom-[4%] right-[5%]'>
           <img src='/whatsapp.png' alt='Whatsapp-icon' />
           </Link>
         </div>
