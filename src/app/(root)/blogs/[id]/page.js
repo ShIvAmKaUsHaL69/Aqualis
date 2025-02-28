@@ -6,9 +6,9 @@ import Link from 'next/link';
 export default async function page({params}) {
     const id = (await params).id
     const rows = await pool.query('SELECT * FROM blogs WHERE id = ?', id);
-    if (rows[0].length === 0) {
+    if (rows[0].length === 0) 
       notFound(); // Redirects to 404 page
-  }
+    
     const blog = rows[0][0];
     const title = blog.title
     const url = `https://yourwebsite.com/blogs/${id}`;
