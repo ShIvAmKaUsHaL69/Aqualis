@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Poppins } from "next/font/google";
+import BackToTop from "../../components/Backtotop";
+import ScrollHeader from "../../components/ScrollHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,9 +39,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
+        <ScrollHeader />
         
         {children}
+        <BackToTop />
         <Footer />
       </body>
     </html>

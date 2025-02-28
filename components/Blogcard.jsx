@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Blogcard({title , shortdesc , image , time , category}) {
   return (
-    <div className="border rounded-lg overflow-hidden bg-white w-full lg:w-[100%] shadow-lg">
+    <div className="border rounded-lg overflow-hidden bg-white w-full lg:w-[100%] max-w-[389px] shadow-lg">
       <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
         <div className="text-gray-600 text-sm mb-2">

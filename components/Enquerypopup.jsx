@@ -1,15 +1,19 @@
 'use client'
-import Link from 'next/link'
+
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
 
 
 export default function Enquerypopup() {
     const [Popup, Setpopup] = useState(false)
+    const router = useRouter();
 
     const handlepopup = () => {
-        if (Popup) 
+        if (Popup){ 
             Setpopup(false)
+            router.push("/#contact");
+        }
         else {
             Setpopup(true)
         }

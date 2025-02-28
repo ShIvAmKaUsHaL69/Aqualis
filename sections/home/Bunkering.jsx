@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Bunkering() {
   return (
-    <div className='relative lg:pb-20' id='bunkering'>
+    <div className='relative ' id='bunkering'>
     <div className='py-20 mt-10 bg-[#1E7179] bg-[url(/Bunkeringbg.png)] bg-no-repeat bg-cover '>
         <div className='max-w-[1280px] mx-auto w-full px-3 '>
             <div className='flex flex-col lg:flex-row lg:gap-40 gap-10'>
@@ -14,7 +14,7 @@ export default function Bunkering() {
                     <img src='Bebunkingimg.jpg' className='w-full lg:w-auto' alt='Bunking' />
                 </div>
             </div>
-            <img src='/arrow.png' alt='arrow' className='absolute lg:block hidden -bottom-[10%] left-[25%]' />
+            <img src='/arrow.png' alt='arrow' className='absolute lg:block hidden -bottom-[28%] left-[25%]' />
         </div>
     </div>
     </div>

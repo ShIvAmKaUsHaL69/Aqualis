@@ -23,18 +23,20 @@ export default async function page({params}) {
   };
   return (
         <div>
-          <div className=' bg-[url(/singleblogbg.jpg)] min-h-[40vh] flex items-end' style={{backgroundPosition: '0% 30%'}} >
+          <div className=' bg-[url(/singleblogbg.jpg)] bg-cover min-h-[40vh] flex items-end' style={{backgroundPosition: '0% 30%'}} >
           </div>
             <div className='max-w-[1280px] mx-auto w-full px-3 mt-10'>
-              <img src='/footerbackgroundimage.jpg' alt={blog.title} className='rounded-lg w-full'/>
+              <img src={blog.image_url} alt={blog.title} className='rounded-lg w-full'/>
               <div className='mt-10 flex justify-between'>
               <p className=' text-[#00000099] flex gap-3'><img src='/calendar.svg' alt='calendar-icon' className='w-5 h-5 '/> {new Date(blog.created_at).toLocaleDateString()}</p>
               <div className='bg-[#05363B] text-white rounded-full px-2 py-1'>
                 {blog.category}
               </div>
               </div>
-              <h1 className='text-5xl text-black mt-5 font-bold'>{blog.title}</h1>
-              <p className='text-base mt-5 pb-5'>{blog.content}</p>
+              <h1 className='text-5xl text-black my-5 font-bold'>{blog.title}</h1>
+              {blog.content.split('\n\n').map((paragraph, index) => (
+                <p key={index} className="mb-4">{paragraph}</p>
+              ))}
               <div className="flex gap-3  my-4">
                 <Link
                   href={shareLinks.twitter}

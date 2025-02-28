@@ -21,7 +21,7 @@ export default async function Blogsection({search}) {
 
   return (
     <div>
-      <div className='h-[40vh] bg-[url(/blogbanner.jpg)] bg-cover' style={{backgroundPosition: '0% 70%'}}>
+      <div className='h-[40vh] bg-[url(/singleblogbg.jpg)] bg-cover' style={{backgroundPosition: '0% 30%'}}>
 
       </div>
       <div className='max-w-[1280px] mx-auto w-full mt-10 gap-3 px-3'>
