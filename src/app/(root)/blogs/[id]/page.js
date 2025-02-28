@@ -1,6 +1,7 @@
-import React, { Suspense } from 'react'
+import React  from 'react'
 import pool from '../../../../../lib/Db';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 
 export default async function page({params}) {
     const id = (await params).id
@@ -9,15 +10,75 @@ export default async function page({params}) {
       notFound(); // Redirects to 404 page
   }
     const blog = rows[0][0];
+    const title = blog.title
+    const url = `https://yourwebsite.com/blogs/${id}`;
+    const encodedUrl = encodeURIComponent(url);
+    const encodedTitle = encodeURIComponent(title);
+
+  const shareLinks = {
+    twitter: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+    whatsapp: `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`,
+  };
   return (
-      <Suspense fallback={<p className="text-black">Loading...</p>}>
-          <p>{blog.title}</p>
+        <div>
+          <div className=' bg-[url(/singleblogbg.jpg)] min-h-[40vh] flex items-end' style={{backgroundPosition: '0% 30%'}} >
+          </div>
+            <div className='max-w-[1280px] mx-auto w-full px-3 mt-10'>
+              <img src='/footerbackgroundimage.jpg' alt={blog.title} className='rounded-lg w-full'/>
+              <div className='mt-10 flex justify-between'>
+              <p className=' text-[#00000099] flex gap-3'><img src='/calendar.svg' alt='calendar-icon' className='w-5 h-5 '/> {new Date(blog.created_at).toLocaleDateString()}</p>
+              <div className='bg-[#05363B] text-white rounded-full px-2 py-1'>
+                {blog.category}
+              </div>
+              </div>
+              <h1 className='text-5xl text-black mt-5 font-bold'>{blog.title}</h1>
+              <p className='text-base mt-5 pb-5'>{blog.content}</p>
+              <div className="flex gap-3  my-4">
+                <Link
+                  href={shareLinks.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <img src="/twitter.svg" alt="Twitter" className="w-8 h-8" />
+                </Link>
+                <Link
+                  href={shareLinks.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <img src="/facebook.svg" alt="Facebook" className="w-8 h-8" />
+                </Link>
+                <Link
+                  href={shareLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <img src="/linkedin.svg" alt="LinkedIn" className="w-8 h-8" />
+                </Link>
+                <Link
+                  href={shareLinks.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <img src="/whatsapp.svg" alt="WhatsApp" className="w-8 h-8" />
+                </Link>
+              </div>
+            </div>
+        
+        
+          {/* <p>{blog.title}</p>
           <p>{blog.content}</p>
           <p>{blog.category}</p>
           <img src={blog.image_url} alt={blog.title}/>
           <p>{new Date(blog.created_at).toLocaleDateString()}</p>
-          <p>Admin</p>
-        </Suspense>
+          <p>Admin</p> */}
+          </div>
   )
 }
 

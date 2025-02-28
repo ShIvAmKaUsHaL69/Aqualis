@@ -44,7 +44,7 @@ export default function Footer() {
               <p className='font-bold text-white'>CONTACT INFORMATION</p>
               <div className='lg:mt-10 mt-2 text-white flex flex-col gap-2'>
                 <Link href='mailto:contact@aqualismarine.com'>Email :       contact@aqualismarine.com</Link>
-                <Link href='#'>Phone :     (65) 97399507</Link>
+                <Link href='tel:+6597399507'>Phone :     (65) 97399507</Link>
                 <Link href='#about'>linkdin</Link>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Footer() {
       <div className='bg-[#05363B] relative'>
         <div className='max-w-[1280px] mx-auto w-full h-full px-3 py-10 text-white'>
           <p>CopyRights : Aqualis Marine@2025</p>
-          <Link href='#' className='absolute top-[20%] right-[5%]'>
+          <Link href='https://api.whatsapp.com/send/?phone=6597399507&text=Hello+%2C+i+am+interested&type=phone_number&app_absent=0' className='absolute top-[20%] right-[5%]'>
           <img src='/whatsapp.png' alt='Whatsapp-icon' />
           </Link>
         </div>

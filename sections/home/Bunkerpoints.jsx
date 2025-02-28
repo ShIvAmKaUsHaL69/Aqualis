@@ -1,10 +1,11 @@
 import React from 'react'
 import Bulletpoints from '../../components/Bulletpoints'
 import Link from 'next/link'
+import Enquerypopup from '../../components/Enquerypopup'
 
 export default function Bunkerpoints() {
   return (
-    <div className='py-20 bg-[url(/bunkingprocess.png)]'>
+    <div className='py-20 bg-[url(/bunkingprocess.png)] relative'>
         <div className='max-w-[1280px] mx-auto w-full flex flex-col lg:flex-row px-3 items-center'>
             <div className='lg:w-1/2 w-full'>
                 <img src='/cargoshipsailing.jpg' className='w-full lg:w-auto' alt='cargo-ship-sailing'/>
@@ -16,8 +17,8 @@ export default function Bunkerpoints() {
                     <Bulletpoints title='Bunkers Claims Handling' description=' We provide expertise and advice on operational and technical issues, specializing in document analysis and efficient claim resolution for fair commercial settlements.' />
                     <Bulletpoints title='Bunkers Surveying & Agency' description=' We offer reliable, vetted surveyors and agents for direct appointment by owners or manage the process on their behalf for seamless operations.' />
                     <Bulletpoints title='Bunker Fuel Procurement Solutions' description=' A dedicated fuel procurement solutions tailored exclusively to our clients’ requirements. Acting as a trusted partner, we take on the responsibility of managing the fuel procurement process end-to-end, ensuring access to reliable, compliant, and cost-effective bunkers.' />
-                    <Link href='/#contact' className='bg-[#05363B] text-white text-xl px-10 py-3 rounded-md'>Send Enquiry</Link>
                 </div>
+                <Enquerypopup />
             </div>
         </div>
     </div>

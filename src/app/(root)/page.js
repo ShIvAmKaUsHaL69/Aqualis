@@ -4,12 +4,14 @@ import Bunkering from "../../../sections/home/Bunkering";
 import Bunkerpoints from "../../../sections/home/Bunkerpoints";
 import Companyslider from "../../../sections/home/Companyslider";
 import Contact from "../../../sections/home/Contact";
+import Entry from "../../../sections/home/Entry";
 import Otherservices from "../../../sections/home/Otherservices";
 
 
 export default function Home() {
   return (
-    <div> 
+    <div>
+      <Entry /> 
       <About />
       <Bunkering />
       <Bunkerpoints />

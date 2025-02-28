@@ -20,8 +20,11 @@ export default async function Blogsection({search}) {
   );
 
   return (
-    <div className='pt-10'>
-      <div className='max-w-[1280px] mx-auto w-full gap-3 px-3'>
+    <div>
+      <div className='h-[40vh] bg-[url(/blogbanner.jpg)] bg-cover' style={{backgroundPosition: '0% 70%'}}>
+
+      </div>
+      <div className='max-w-[1280px] mx-auto w-full mt-10 gap-3 px-3'>
         <div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between w-full'>
             <h2 className='text-4xl font-bold'>{`${search ? `Showing result for ${search}` : 'All Blogs'}`}</h2>
             <SearchForm />
