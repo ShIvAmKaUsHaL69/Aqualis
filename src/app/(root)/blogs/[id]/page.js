@@ -1,15 +1,15 @@
 import React  from 'react'
-import pool from '../../../../../lib/Db';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { getCachedBlogById } from '../../../../../lib/Db';
 
 export default async function page({params}) {
     const id = (await params).id
-    const rows = await pool.query('SELECT * FROM blogs WHERE id = ?', id);
-    if (rows[0].length === 0) 
+    const rows = await getCachedBlogById(id);
+    if (!rows) 
       notFound(); // Redirects to 404 page
     
-    const blog = rows[0][0];
+    const blog = rows;
     const title = blog.title
     const url = `https://yourwebsite.com/blogs/${id}`;
     const encodedUrl = encodeURIComponent(url);
@@ -86,19 +86,17 @@ export default async function page({params}) {
 
 export async function generateMetadata({ params }) {
   const id = (await params).id;
-  const rows = await pool.query('SELECT * FROM blogs WHERE id = ?', [id]);
+  const blog = await getCachedBlogById(id);
 
-  if (rows[0].length === 0) {
-      return {
-          title: 'Blog Not Found | Acqalis Marine',
-          description: 'This blog does not exist.',
-      };
+  if (!blog) {
+    return {
+      title: 'Blog Not Found | Acqalis Marine',
+      description: 'This blog does not exist.',
+    };
   }
 
-  const blog = rows[0][0];
-
   return {
-      title: `${blog.title} | Acqalis Marine`,
-      description: `${blog.shortdesc} | Acqalis Marine`,
+    title: `${blog.title} | Acqalis Marine`,
+    description: `${blog.shortdesc} | Acqalis Marine`,
   };
 }

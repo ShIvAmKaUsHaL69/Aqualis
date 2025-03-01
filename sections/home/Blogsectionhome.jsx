@@ -1,11 +1,11 @@
 import React from 'react'
 import Homemainblogcard from '../../components/Homemainblogcard'
 import Homeblogcard from '../../components/Homeblogcard'
-import pool from '../../lib/Db';
+import pool, { getCachedBlogs } from '../../lib/Db';
 import Link from 'next/link';
 
 export default async function Blogsectionhome() {
-  const [rows] = await pool.query('SELECT * FROM blogs ORDER BY created_at DESC');
+  const rows = await getCachedBlogs();
   return (
     <div className='py-20' id='blog'>
     <div className='max-w-[1280px] mx-auto w-full px-3'>

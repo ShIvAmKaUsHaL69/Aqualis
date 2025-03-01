@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import Blogcard from '../../components/Blogcard'
 import Inputfield from '../../components/inputfield'
 import SearchForm from '../../components/Search'
-import pool from '../../lib/Db';
+import { getCachedBlogs } from '../../lib/Db';
 import Link from 'next/link';
 
 
@@ -11,7 +11,7 @@ export default async function Blogsection({search}) {
   if(!search) {
     search = ''
   }
-  const [rows] = await pool.query('SELECT * FROM blogs ORDER BY created_at DESC');
+  const rows = await getCachedBlogs();
 
   const filteredBlogs = rows.filter(blog =>
     blog.title.toLowerCase().includes(search.toLowerCase()) ||
