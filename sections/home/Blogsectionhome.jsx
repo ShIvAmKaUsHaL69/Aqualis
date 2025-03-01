@@ -12,10 +12,10 @@ export default async function Blogsectionhome() {
       <p className='text-4xl font-bold text-[#05363B]'>Blogs</p>
       <div className='flex mt-10 flex-col lg:flex-row gap-10'>
             <div className='lg:w-1/2 w-full h-full'>
-                <Homemainblogcard image='/mainblogdemo.jpg' title='Lorem ipsum dolor sit amet' description='Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Suspendisse vel.'/>
+            <Link href={`/blogs/${rows[0].id}`} passHref><Homemainblogcard image={rows[0].image_url} title={rows[0].title} description={rows[0].shortdesc}/></Link>
             </div>
             <div className='lg:w-1/2 w-full gap-10 flex flex-col justify-between'>
-                <Link href={`/blogs/${rows[0].id}`} passHref><Homeblogcard title={rows[0].title} imge={rows[0].image_url} description={rows[0].shortdesc}/></Link>
+                <Link href={`/blogs/${rows[2].id}`} passHref><Homeblogcard title={rows[2].title} imge={rows[2].image_url} description={rows[2].shortdesc}/></Link>
                 
                 <Link href={`/blogs/${rows[1].id}`} passHref><Homeblogcard title={rows[1].title} imge={rows[1].image_url} description={rows[1].shortdesc}/></Link>
             </div>
