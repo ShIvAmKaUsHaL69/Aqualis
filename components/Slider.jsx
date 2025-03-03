@@ -57,6 +57,7 @@ const ImageSlider = () => {
     <div>
     <div className="relative w-full flex items-center overflow-hidden mt-10 px-4">
       <button
+        aria-label="previous slide"
         className="absolute left-0 bg-[#04393F] text-white p-3 rounded-full px-[17px] py-[7px] z-10"
         onClick={prevSlide}
       >
@@ -75,6 +76,7 @@ const ImageSlider = () => {
         ))}
       </div>
       <button
+        aria-label="next slide"
         className="absolute px-[17px] py-[7px] right-0 bg-[#04393F] text-white p-3 rounded-full z-10"
         onClick={nextSlide}
       >
@@ -84,6 +86,7 @@ const ImageSlider = () => {
      <div className=" justify-center mt-10 flex space-x-2">
      {Array.from({ length: Math.ceil(images.length / itemsToShow) }).map((_, index) => (
        <button
+         aria-label="navigation dots"
          key={index}
          className={`w-3 h-3 rounded-full ${index === Math.floor(currentIndex / itemsToShow) ? 'bg-[#04393F]' : 'bg-gray-300'}`}
          onClick={() => setCurrentIndex(index * itemsToShow)}

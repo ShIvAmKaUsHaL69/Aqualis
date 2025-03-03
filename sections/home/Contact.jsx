@@ -24,7 +24,7 @@ export default function Contact() {
                             <Inputfield field='city' placeholder='City' type='text'/>
                         </div>
                         <textarea name='message' placeholder='Type your Message here!' type='text' className='h-40 border w-full border-black py-4 px-5 rounded-lg bg-transparent text-black placeholder:text-black'/>
-                        <button href='#' type='submit' className='bg-[#05363B] text-white text-xl px-10 py-3 rounded-md'>Submit Message</button>
+                        <button aria-label="enquiry submit button" href='#' type='submit' className='bg-[#05363B] text-white text-xl px-10 py-3 rounded-md'>Submit Message</button>
                     </form>
                 </div>
             </div>

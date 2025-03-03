@@ -14,9 +14,9 @@ export default function Otherservices() {
                     <Bulletpoints title='De Bunkering & Fuel Disposal Services' description='handling fuel offloading and disposal as per regulations' color='white'/>
                     <Bulletpoints title='Bunker Trader Representation' description='Acting as a local partner for overseas traders without regional offices.' color='white'/>
                 </div>
-                <div className='w-full lg:w-1/2 flex items-start lg:justify-end relative'>
-                 <img src='/otherservices1.jpg' alt='services' className='rounded-lg w-full lg:w-auto'/>
-                 <img src='/otherservices2.jpg' alt='services' className='absolute left-[20%] bottom-[20%] hidden lg:block'/>
+                <div className='w-full lg:w-1/2 flex items-start flex-col md:flex-row lg:justify-end gap-5 relative'>
+                 <img src='/otherservices1.jpg' alt='services' className='rounded-lg w-full lg:w-auto h-auto md:h-full'/>
+                 <img src='/otherservices2.jpg' alt='services' className='rounded-lg w-full lg:w-auto h-auto md:h-full'/>
 
                 </div>
             </div>

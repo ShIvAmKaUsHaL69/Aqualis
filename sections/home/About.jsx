@@ -8,8 +8,8 @@ export default function About() {
         <div className="relative w-full lg:w-1/2">
             <img src="/aboutimage.jpg" alt='shipsailing' className="w-full h-auto" />
             <img
-            src="/shipfromtop.jpg"
-            alt='shipfromtop'
+            src="/boataboutus.jpg"
+            alt='boat about us'
             className="lg:block hidden absolute -bottom-24 -right-64 border-4 border-white shadow-lg"
             />
         </div>

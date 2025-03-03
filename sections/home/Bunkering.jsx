@@ -11,7 +11,7 @@ export default function Bunkering() {
                     <p className='mt-10 font-thin'>Bunkering is a critical aspect of vessel operations, with fuel pricing significantly impacting a vessel's Time Charter Equivalent (TCE). Far from being a routine service, it demands strategic planning, precise execution, and access to quality fuel to ensure smooth operations and cost efficiency.</p>
                 </div>
                 <div>
-                    <img src='Bebunkingimg.jpg' className='w-full lg:w-auto' alt='Bunking' />
+                    <img src='bunkeringimg.jpg' className='w-full lg:w-auto rounded-md' alt='Bunking' />
                 </div>
             </div>
             <img src='/arrow.png' alt='arrow' className='absolute lg:block hidden -bottom-[28%] left-[25%]' />

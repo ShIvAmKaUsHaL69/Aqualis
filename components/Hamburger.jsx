@@ -7,6 +7,7 @@ export default function Hamburger() {
   return (
     <div className="relative">
       <button
+        aria-label="menu button"
         className="p-2 rounded-md focus:outline-none focus:ring-gray-500 text-white text-3xl"
         onClick={() => setIsOpen(!isOpen)}
       >
