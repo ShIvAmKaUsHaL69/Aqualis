@@ -5,10 +5,10 @@ import Enquerypopup from '../../components/Enquerypopup'
 
 export default function Bunkerpoints() {
   return (
-    <div className='py-20 lg:pt-32 bg-[url(/bunkingprocess.png)] relative'>
-        <div className='max-w-[1280px] mx-auto w-full flex flex-col lg:flex-row px-3 items-center'>
-            <div className='lg:w-1/2 w-full'>
-                <img src='/cargoshipsailing.jpg' className='w-full lg:w-auto' alt='cargo-ship-sailing'/>
+    <div className='py-20 lg:py-32  bg-[url(/bunkingprocess.png)] relative'>
+        <div className='max-w-[1280px] mx-auto w-full flex flex-col lg:flex-row px-3 items-center '>
+            <div className='lg:w-1/2 w-full flex h-full gap-5 '>
+                <img src='/cargoshipsailing.jpg' className='w-full lg:w-auto h-[36rem] object-cover' alt='cargo-ship-sailing'/>
             </div>
             <div className='lg:w-1/2 w-full'>
                 <div className='flex flex-col gap-5 mt-10 lg:mt-0 items-start'>

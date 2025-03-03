@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='bg-[url(/Aboutbackground.png)] bg-no-repeat bg-cover pt-20' id='about'>
+    <div className='bg-[url(/Aboutbackground.png)] bg-no-repeat bg-cover pt-10 lg:pt-40' id='about'>
       <div className='max-w-[1280px] mx-auto w-full flex flex-col lg:pb-48 items-start gap-3 px-3'>
       <div className="block lg:flex flex-row w-full gap-80">
         <div className="relative w-full lg:w-1/2">
