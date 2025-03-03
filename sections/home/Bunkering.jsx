@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Bunkering() {
   return (
-    <div className='relative ' id='bunkering'>
-    <div className='py-20 mt-10 bg-[#1E7179] bg-[url(/Bunkeringbg.png)] bg-no-repeat bg-cover '>
+    <div className='relative mt-10' id='bunkering'>
+    <div className='py-10 bg-[#1E7179] bg-[url(/Bunkeringbg.png)] bg-no-repeat bg-cover '>
         <div className='max-w-[1400px] mx-auto w-full px-3 '>
             <div className='flex flex-col lg:flex-row lg:gap-40 justify-between'>
                 <div className='text-white w-full lg:w-[60%]'>

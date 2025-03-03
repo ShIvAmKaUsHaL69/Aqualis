@@ -5,7 +5,7 @@ import Enquerypopup from '../../components/Enquerypopup'
 
 export default function Bunkerpoints() {
   return (
-    <div className='py-10  bg-[url(/bunkingprocess.png)] relative'>
+    <div className='py-10  bg-[url(/bunkingprocess.png)] bg-bottom relative'>
         <div className='max-w-[1400px] mx-auto w-full flex flex-col gap-10 justify-between lg:flex-row px-3'>
             <div className='lg:w-1/2 w-full flex items-center '>
                 <img src='/bunkeringpointsbg.png' className='w-full lg:w-auto object-cover' alt='cargo-ship-sailing'/>
