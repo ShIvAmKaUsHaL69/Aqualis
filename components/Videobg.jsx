@@ -3,7 +3,7 @@ export default function Videobg() {
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-[url(/backgroundhero.png)] bg-cover bg-no-repeat bg-center">
     <iframe
-        title="background-video"
+        aria-label="background-video"
         src="https://player.vimeo.com/video/1061145934?h=53d2a2f945&dnt=1&autoplay=1&loop=1&muted=1&background=1"
         className="absolute top-1/2 left-1/2 w-full h-full"
         style={{

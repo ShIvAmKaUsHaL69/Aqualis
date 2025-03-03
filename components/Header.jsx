@@ -4,9 +4,9 @@ import Hamburger from "./Hamburger";
 export default function Header({ className }) {
   return (
     <div className={`w-full min-h-20 bg-[#FFFFFF66] fixed top-0 z-50 px-3 transition-transform duration-300 ${className}`}>
-      <div className="max-w-[1280px] justify-between items-center flex flex-row mx-auto py-4">
+      <div className="max-w-[1400px] justify-between items-center flex flex-row mx-auto py-1">
         <img src="/logo.png" className="" alt="logo" />
-        <div className="hidden lg:flex flex-row gap-12 text-xl text-[#05363B] font-bold">
+        <div className="hidden lg:flex flex-row gap-14 text-base text-[#05363B] font-bold">
           <Link href="/">Home</Link>
           <Link href="/#about">About Us</Link>
           <Link href="/#bunkering">Bunkering</Link>

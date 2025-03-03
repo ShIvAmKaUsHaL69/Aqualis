@@ -3,10 +3,10 @@ import Bulletpoints from '../../components/Bulletpoints'
 
 export default function Otherservices() {
   return (
-    <div className='py-28 bg-[#1E7179] bg-[url(/servicesbg.jpeg)] bg-no-repeat bg-cover ' id='services'>
-        <div className='max-w-[1280px] mx-auto w-full px-3 '>
+    <div className='items-center flex bg-[#1E7179] min-h-[100vh] bg-[url(/servicesbg.jpeg)] bg-no-repeat bg-cover ' id='services'>
+        <div className='max-w-[1400px] mx-auto w-full px-3 '>
             <div className='flex flex-col lg:flex-row gap-10 lg:gap-0'>
-                <div className='w-full lg:w-1/2 text-white flex flex-col gap-8'>
+                <div className='w-full lg:w-1/2 text-white flex flex-col gap-6'>
                     <p className='text-4xl font-bold'>Other Services</p>
                     <Bulletpoints title='Ex-Wharf & Physical Supply Co-ordination' description='Facilitating bunker deliveries at Major Ports' color='white'/>
                     <Bulletpoints title='Contract Structuring & Negotiation' description='Advising on fuel purchasing contracts and supplier agreements' color='white'/>

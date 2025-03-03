@@ -7,13 +7,13 @@ export default function Contact() {
     }
   return (
     <div className='py-20 bg-[#F5F5F5] bg-[url(/contactcircle.png)] bg-no-repeat bg-right-bottom' id='contact'>
-        <div className='max-w-[1280px] mx-auto w-full px-3'>
+        <div className='max-w-[1400px] mx-auto w-full px-3'>
             <p className='text-3xl text-[#05363B] font-semibold'>Contact Us.</p>
-            <div className='mt-10 lg:flex-row flex-col flex justify-between'>
-                <div>
-                    <img src='/contact.jpg' alt='contact' className='w-full h-full' />
+            <div className='mt-10 lg:flex-row flex-col flex justify-between gap-10'>
+                <div className='lg:w-1/2 w-full h-auto'>
+                    <img src='/contact.jpg' alt='contact' className='w-full h-full lg:h-[27rem]' />
                 </div>
-                <div>
+                <div className=''>
                     <form className='flex flex-col gap-5 items-start mt-10 lg:mt-0'>
                         <div className='flex lg:flex-row flex-col gap-5 w-full'>
                             <Inputfield field='name' placeholder='Your Name' type='text'/>
@@ -23,8 +23,8 @@ export default function Contact() {
                             <Inputfield field='phone' placeholder='Phone Number' type='text'/>
                             <Inputfield field='city' placeholder='City' type='text'/>
                         </div>
-                        <textarea name='message' placeholder='Type your Message here!' type='text' className='h-40 border w-full border-black py-4 px-5 rounded-lg bg-transparent text-black placeholder:text-black'/>
-                        <button aria-label="enquiry submit button" href='#' type='submit' className='bg-[#05363B] text-white text-xl px-10 py-3 rounded-md'>Submit Message</button>
+                        <textarea name='message' placeholder='Type your Message here!' type='text' className='h-40 border w-full border-black py-4 px-5 rounded-lg bg-transparent text-black placeholder:text-black placeholder:text-sm'/>
+                        <button aria-label="enquiry submit button" href='#' type='submit' className='bg-[#05363B] text-white text-lg px-5 py-3 rounded-md'>Submit Message</button>
                     </form>
                 </div>
             </div>
