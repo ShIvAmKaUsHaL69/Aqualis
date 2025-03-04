@@ -8,7 +8,7 @@ export default function About() {
         <div className="relative w-full lg:w-[60%]">
             <img src="/aboutusbgimg.png" alt='shipsailing' className="w-full h-full" />
         </div>
-        <div className="flex w-full lg:w-1/2 lg:mt-0 mt-10 flex-col gap-7">
+        <div className="flex w-full lg:w-1/2 lg:mt-0 mt-10 flex-col gap-7 lg:pl-[4%]">
             <p className="text-4xl pb-2 font-bold text-[#05363B] ">About Us</p>
             <p className='text-[#00000099] xxl:text-base text-sm'>At Aqualis Marine, our name reflects our ethos. "Aqualis," meaning "water-like," symbolizes adaptability and resilience.</p>
             <p className='text-[#00000099] xxl:text-base text-sm'>Specializing in transparent bunker broking, we provide expert fuel procurement across Singapore, Asia-Pacific and Indian Subcontinent. <span className='font-semibold'>We bridge the gap for shipowners and traders in different time zones</span>, ensuring access to reliable, cost-effective, and compliant bunkers with real-time market insights.</p>
