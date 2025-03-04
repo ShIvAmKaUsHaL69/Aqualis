@@ -8,7 +8,7 @@ export default async function Blogsectionhome() {
   const rows = await getCachedBlogs();
   return (
     <div className='py-16' id='blog'>
-    <div className='lg:px-[12%] mx-auto w-full px-4'>
+    <div className='lg:px-[12.5%] mx-auto w-full px-4'>
       <p className='text-4xl font-bold text-[#05363B]'>Blogs</p>
       <div className='flex mt-10 flex-col lg:flex-row gap-7'>
             <div className='lg:w-1/2 w-full h-full'>

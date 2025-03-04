@@ -6,7 +6,7 @@ export default function Footer() {
     <div>
       <div className='bg-[url(/footerbackgroundimage.jpg)] bg-bottom bg-cover h-96  '>
         <div className='bg-gradient-to-t from-black/70 to-black/10 h-96'>
-        <div className='lg:px-[12%] mx-auto w-full h-full px-5 py-5 flex items-end lg:justify-end justify-center'>
+        <div className='lg:px-[12.5%] mx-auto w-full h-full px-5 py-5 flex items-end lg:justify-end justify-center'>
             <form className='border-white border-0 lg:border-2 rounded-lg flex flex-col gap-2 lg:gap-0 lg:flex-row'>
                 <input className='bg-transparent border-2 lg:border-0 rounded-lg text-sm placeholder:text-white placeholder:text-sm py-1 text-white px-3 lg:w-[20rem] w-full' type='email' name='email' placeholder='Email here*'/>
                 <button aria-label="newsletter button" type='submit' href='#' className='bg-[#05363b] text-sm text-white py-2 px-5 border-0 lg:border-l-2 rounded-r-lg'>Subscribe To News And Update</button>
@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='bg-[#1E7179]'>
-        <div className='lg:px-[12%] mx-auto w-full h-full px-5 py-20 flex flex-col gap-10 lg:gap-0 lg:flex-row xl:justify-between sm:justify-around'>
+        <div className='lg:px-[12.5%] mx-auto w-full h-full px-5 py-20 flex flex-col gap-10 lg:gap-0 lg:flex-row xl:justify-between sm:justify-around'>
           <div>
             <img src='/whitelogo.png' alt='white-logo' />
             <p className='text-white w-full lg:max-w-[300px] mt-7 text-xs'>Aqualis Marine leverages an agile and strategic approach to deliver transparent, customized maritime solutions, enhancing efficiency and value for our clients</p>
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='bg-[#1E7179] relative'>
-        <div className='lg:px-[12%] mx-auto w-full h-full px-5 py-10 text-xs text-white'>
+        <div className='lg:px-[12.5%] mx-auto w-full h-full px-5 py-10 text-xs text-white'>
           <p >CopyRights : Aqualis Marine@2025</p>
           <Link href='https://api.whatsapp.com/send/?phone=6597399507&text=Hello+%2C+i+am+interested&type=phone_number&app_absent=0' className='fixed bottom-6 right-6'>
           <img src='/whatsapp.png' alt='Whatsapp-icon' />
