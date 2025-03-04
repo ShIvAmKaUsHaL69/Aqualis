@@ -33,7 +33,7 @@ export default async function Blogsection({search}) {
           <Suspense fallback={<p className='text-black'>Loading</p>}>
                 {filteredBlogs.length > 0 ? (
                   filteredBlogs.map((blog) => (
-                    <Link key={blog.id} href={`/blogs/${blog.id}`} passHref>
+                    <Link key={blog.id} href={`/blogs/${blog.id}`} className='border rounded-lg overflow-hidden shadow-lg' passHref>
                     <Blogcard
                       title={blog.title}
                       shortdesc={blog.shortdesc}
