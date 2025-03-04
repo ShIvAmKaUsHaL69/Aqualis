@@ -7,7 +7,7 @@ export default function Bulletpoints({title, description , color}) {
   return (
     <div className='flex gap-5'>
         <img src='/flowerpoints.png' alt='flowepoint' className='w-4 h-4 mt-2'/>
-        <p className={`font-semibold text-${color} `}>
+        <p className={`font-semibold text-sm xxl:text-base text-${color} `}>
         {title} - <span className={`font-normal ${color == 'black' ? 'text-[#00000099]' : 'text-white/60'} `}>{description}</span>
         </p>
     </div>

@@ -6,12 +6,12 @@ import Enquerypopup from '../../components/Enquerypopup'
 export default function Bunkerpoints() {
   return (
     <div className='py-10  bg-[url(/bunkingprocess.png)] bg-bottom relative'>
-        <div className='max-w-[1400px] mx-auto w-full flex flex-col gap-10 justify-between lg:flex-row px-3'>
+        <div className='lg:px-[8%] mx-auto w-full flex flex-col gap-10 justify-between lg:flex-row px-4'>
             <div className='lg:w-1/2 w-full flex items-center '>
                 <img src='/bunkeringpointsbg.png' className='w-full lg:w-auto object-cover' alt='cargo-ship-sailing'/>
             </div>
             <div className='lg:w-[70%] w-full'>
-                <div className='flex flex-col gap-8 mt-10 lg:mt-0 items-start'>
+                <div className='flex flex-col gap-9 mt-10 lg:mt-0 items-start'>
                     <Bulletpoints title='Bunker Procurement' description=' We operate on a transparent bunker broking model, ensuring clarity and trust in every transaction. Our expertise allows us to tailor fuel procurement solutions to meet diverse operational needs, securing reliable, compliant, and cost-effective bunkers while navigating market dynamics efficiently. '/>
                     <Bulletpoints title='Bunker Risk Management' description=' We provide strategies to mitigate market volatility, helping clients manage fuel price fluctuations and secure cost-effective solutions.' />
                     <Bulletpoints title='Bunkers Claims Handling' description=' We provide expertise and advice on operational and technical issues, specializing in document analysis and efficient claim resolution for fair commercial settlements.' />
