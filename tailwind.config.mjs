@@ -18,7 +18,7 @@ export default {
         poppins: "var(--font-poppins)",
       },
       screens: {
-        'xxl': '1300px', // Custom breakpoint
+        'xxl': '1500px', // Custom breakpoint
       },
     },
   },
