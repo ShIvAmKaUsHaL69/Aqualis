@@ -25,7 +25,7 @@ export default function SearchForm() {
         onChange={(e) => setQuery(e.target.value)}
         className="border p-2 rounded w-full"
       />
-      <button type="submit" aria-label="search button for blogs" className="bg-[#05363B] text-white px-4 py-2 rounded">
+      <button type="submit" aria-label="search button for blogs" className="bg-[#05363B] text-white px-5 py-2 rounded">
         Search
       </button>
     </form>
