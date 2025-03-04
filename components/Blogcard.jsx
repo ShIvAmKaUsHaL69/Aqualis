@@ -6,11 +6,11 @@ export default function Blogcard({title , shortdesc , image , time , category}) 
       <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
         <div className="text-gray-600 text-sm mb-2">
-          <div className='flex justify-between'>
+          <div className='flex items-center justify-between'>
           <div>
-          <span className="font-semibold">Admin</span> • {time}
+          <span className="font-semibold text-xs"></span> {time}
           </div>
-          <div className='bg-[#05363B] text-white rounded-full px-2'>
+          <div className='bg-[#05363B] text-white text-xs rounded-full py-1 px-2'>
             {category}
           </div>
           </div>

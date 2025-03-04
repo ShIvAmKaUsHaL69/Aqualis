@@ -70,7 +70,7 @@ const ImageSlider = () => {
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-[100px] h-[100px] object-contain p-2"
+            className="w-[100px] h-[100px] object-contain px-5 lg:py-4"
             style={{ flex: `0 0 calc(100% / ${itemsToShow})` }}
           />
         ))}

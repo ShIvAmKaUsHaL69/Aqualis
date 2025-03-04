@@ -24,7 +24,7 @@ export default async function Blogsection({search}) {
       <div className='h-[40vh] bg-[url(/singleblogbg.jpg)] bg-cover' style={{backgroundPosition: '0% 30%'}}>
 
       </div>
-      <div className='lg:px-[12.5%] mx-auto w-full mt-10 gap-3 px-4'>
+      <div className='lg:px-[13.5%] mx-auto w-full mt-10 gap-3 px-4'>
         <div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between w-full'>
             <h2 className='text-4xl font-bold'>{`${search ? `Showing result for ${search}` : 'All Blogs'}`}</h2>
             <SearchForm />

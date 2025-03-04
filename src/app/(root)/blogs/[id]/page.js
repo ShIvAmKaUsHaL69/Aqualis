@@ -25,7 +25,7 @@ export default async function page({params}) {
         <div>
           <div className=' bg-[url(/singleblogbg.jpg)] bg-cover min-h-[40vh] flex items-end' style={{backgroundPosition: '0% 30%'}} >
           </div>
-            <div className='lg:px-[12.5%] mx-auto w-full px-5 mt-10'>
+            <div className='lg:px-[13.5%] mx-auto w-full px-5 mt-10'>
               <img src={blog.image_url} alt={blog.title} className='rounded-lg w-full'/>
               <div className='mt-10 flex justify-between'>
               <p className=' text-[#00000099] flex gap-3'><img src='/calendar.svg' alt='calendar-icon' className='w-5 h-5 '/> {new Date(blog.created_at).toLocaleDateString()}</p>
